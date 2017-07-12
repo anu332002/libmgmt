@@ -1,0 +1,7 @@
+function submitLoginForm(){
+	
+}
+
+function submitRegForm(){
+	
+}

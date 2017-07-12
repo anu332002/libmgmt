@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="edu.neu.user.Book" table="book"> <!-- books -->
+	    <id name="bookId" type="java.lang.Long">
+	        <column name="bookId" />
+			<generator class="native" />
+	    </id>
+	    <property name="bookName" type="java.lang.String" length="100">
+	        <column name="bookName"/>
+	    </property>
+	    <property name="bookAuthor" type="java.lang.String" length="100">
+	        <column name="bookAuthor"/>
+	    </property>
+	    <property name="price" type="java.lang.String" length="10">
+	        <column name="price"/>
+	    </property>
+	    <property name="num" type="java.lang.Integer" length="11">
+	        <column name="num"/>
+	    </property>
+	</class>
+</hibernate-mapping>

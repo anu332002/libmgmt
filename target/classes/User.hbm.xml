@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="edu.neu.user.User" table="user">
+	    <id name="id" type="java.lang.Long">
+	        <column name="userId" />
+			<generator class="native" />
+	    </id>
+	    <property name="username" type="java.lang.String" length="60">
+	        <column name="name"/>
+	    </property>
+	    <property name="password" type="java.lang.String" length="15">
+	        <column name="password"/>
+	    </property>
+	    <property name="email" type="java.lang.String" length="60">
+	        <column name="email"/>
+	    </property>
+	    <property name="role" type="java.lang.Integer" length="11">
+	        <column name="role"/>
+	    </property>
+	</class>
+</hibernate-mapping>
